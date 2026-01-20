@@ -1,8 +1,7 @@
-.PHONY: all build __build __build-dev
+.PHONY: all __build build-dev
 
 VERSION:=v0.0.1
-# COMMIT_SHA:=$(shell git rev-parse main)
-COMMIT_SHA:="blyat"
+COMMIT_SHA:=$(shell git rev-parse master)
 BINARY_NAME:=azrael
 LDFLAGS:=-X main.Version=$(VERSION) -X main.CommitSHA=$(COMMIT_SHA)
 

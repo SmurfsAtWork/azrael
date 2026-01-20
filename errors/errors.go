@@ -3,11 +3,11 @@ package errors
 import "errors"
 
 var (
-	ErrInvalidToken      = errors.New("invalid-session-token")
-	ErrExpiredToken      = errors.New("expired-session-token")
-	ErrInvalidCredenials = errors.New("invalid-login-credentials")
+	ErrInvalidToken      = errors.New("Invalid session token")
+	ErrExpiredToken      = errors.New("Expired session token")
+	ErrInvalidCredenials = errors.New("Invalid login credentials")
 
-	ErrSomethingWentWrong = errors.New("something-went-wrong")
+	ErrSomethingWentWrong = errors.New("Something went wrong")
 )
 
 type PapaError interface {

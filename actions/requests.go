@@ -106,6 +106,7 @@ func makeRequest[RequestBody any, ResponseBody any](conf makeRequestConfig[Reque
 
 		_ = resp.Body.Close()
 
+		// return respBody, goerrors.New("non 200 status")
 		return respBody, tryParsePapaError(errResp.ErrorId, errResp)
 	}
 
